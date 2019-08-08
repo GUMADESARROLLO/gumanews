@@ -35,7 +35,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Android News App</title>
+    <title>Guma News App</title>
     <!-- Favicon-->
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
 
@@ -176,7 +176,7 @@
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="dashboard.php">ANDROID NEWS APP</a>
+                <a class="navbar-brand" href="dashboard.php">GUMA NEWS APP</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -289,10 +289,10 @@
             <!-- Footer -->
             <div class="legal">
                 <div class="copyright">
-                    Copyright &copy; 2018 <a href="https://www.solodroid.co.id" target="_blank">Solodroid Developer</a>
+                    Copyright &copy; 2018 IT Guma
                 </div>
                 <div class="version">
-                    <b>Version: </b> 3.0.0
+                    <b>Version: </b> 1.0.0
                 </div>
             </div>
             <!-- #Footer -->

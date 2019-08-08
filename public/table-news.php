@@ -28,7 +28,10 @@
 
         $users_sql = "SELECT * FROM tbl_fcm_token";
 
+
+
         $users_result = mysqli_query($connect, $users_sql);
+
         while($user_row = mysqli_fetch_assoc($users_result)) {
 
             $msg = $pesan;
@@ -38,12 +41,32 @@
 
             $data = array("title" => $msg, "image" => $img, "id" => $id, "link" => $link);
 
+        /*    $data = array
+            (
+                'message' 	=> 'here is a message. message',
+                'title'		=> $msg,
+                "image"     => $img,
+                "id"        => $id,
+                "link"      => $link,
+                'subtitle'	=> 'This is a subtitle. subtitle',
+                'tickerText'=> 'Ticker text here...Ticker text here...Ticker text here',
+                'vibrate'	=> 1,
+                'sound'		=> 1,
+                'largeIcon'	=> 'large_icon',
+                'smallIcon'	=> 'small_icon',
+                'priority'  => 10,
+            );*/
+
+
+
             echo SEND_FCM_NOTIFICATION($user_row['token'], $data);
 
         }
 
         if ($result) {
+
             $error['push_notification'] = "<div class='alert alert-info'>Congratulations, Push Notification Sent to $total_user Users.</div>";
+            //$error['push_notification'] = "<div class='alert alert-info'>".count($user_row)."</div>";
         } else {
             $error['push_notification'] = "<div>Failed.</div>";
         }
@@ -166,7 +189,7 @@
             <li class="active">Manage News</a></li>
         </ol>
 
-       <div class="container-fluid">
+       <div class="container-fluid" >
 
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -229,7 +252,7 @@
             <li class="active">Manage News</a></li>
         </ol>
 
-       <div class="container-fluid">
+       <div class="container-fluid" >
 
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
